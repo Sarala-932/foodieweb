@@ -39,3 +39,7 @@
   font-size: 42px;
   font-weight: 600;
 }
+
+.link {
+  text-decoration: none;
+}

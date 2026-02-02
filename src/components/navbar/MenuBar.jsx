@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 import CustomButton from "../button/CustomButton";
 import logo from "../../assets/logo.png";
 
-export default function MenuBar({title, userlogo}) {
+export default function MenuBar({title, userlogo, style}) {
   return (
-    <div className={styles.navbar}>
+    <div className={styles.navbar} style={style}>
       <div className={styles.logo}>
         <img src={userlogo || logo} alt="logo" className={styles.logoimg} />
         <h1 className={styles.title}>{title || "Your Company Name"}</h1>
@@ -29,7 +29,9 @@ export default function MenuBar({title, userlogo}) {
           <Link to={"/contact"}>Contact</Link>
         </li>
       </ul>
-      <CustomButton btnTxt="Book A Table" />
+      <Link to={"/book-table"} className={styles.link}>
+        <CustomButton btnTxt="Book A Table" />
+      </Link>
     </div>
   );
 }

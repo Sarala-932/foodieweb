@@ -1,101 +1,137 @@
 import React from "react";
-import styles from "./Blog.module.css";
+import { useNavigate } from "react-router-dom";
 import ContactNav from "../components/navbar/ContactNav";
 import MenuBar from "../components/navbar/MenuBar";
-import photo1 from "../assets/blogPhoto1.jpg";
-import photo2 from "../assets/blogPhoto2.jpg";
+import styles from "./Blog.module.css";
+import blogm1 from "../assets/blogm1.jpg";
+import blogm2 from "../assets/blogm2.jpg";
+import blog3 from "../assets/blog3.jpg";
+import blog4 from "../assets/blog4.jpg";
+import blog5 from "../assets/blog5.jpg";
+import blog6 from "../assets/blog6.jpg";
+import blog7 from "../assets/blog7.jpg";
+import blog8 from "../assets/blog8.jpg";
+import blog9 from "../assets/blog9.jpg";
+import blog10 from "../assets/blog10.jpg";
+import blog11 from "../assets/blog11.jpg";
+import blog12 from "../assets/blog12.jpg";
+
+const blogPosts = [
+  {
+    id: 1,
+    image: blogm1,
+    date: "January 3, 2023",
+    title: "How to prepare a delicious gluten free sushi",
+  },
+  {
+    id: 2,
+    image: blogm2,
+    date: "January 3, 2023",
+    title: "Exclusive baking lessons from the pastry king",
+  },
+  {
+    id: 3,
+    image: blog3,
+    date: "January 3, 2023",
+    title: "How to prepare the perfect fries in an air fryer",
+  },
+  {
+    id: 4,
+    image: blog4,
+    date: "January 3, 2023",
+    title: "How to prepare delicious chicken tenders",
+  },
+  {
+    id: 5,
+    image: blog5,
+    date: "January 3, 2023",
+    title: "5 great cooking gadgets you can buy to save time",
+  },
+  {
+    id: 6,
+    image: blog6,
+    date: "January 3, 2023",
+    title: "The secret tips & tricks to prepare a perfect burger",
+  },
+  {
+    id: 7,
+    image: blog7,
+    date: "January 3, 2023",
+    title: "7 delicious cheesecake recipes you can prepare",
+  },
+  {
+    id: 8,
+    image: blog8,
+    date: "January 3, 2023",
+    title: "5 great pizza restaurants you should visit this city",
+  },
+  {
+    id: 9,
+    image: blog9,
+    date: "January 3, 2023",
+    title: "5 great cooking gadgets you can buy to save time",
+  },
+  {
+    id: 10,
+    image: blog10,
+    date: "January 3, 2023",
+    title: "How to prepare a delicious gluten free sushi",
+  },
+  {
+    id: 11,
+    image: blog11,
+    date: "January 3, 2023",
+    title: "Top 20 simple and quick desserts for kids",
+  },
+  {
+    id: 12,
+    image: blog12,
+    date: "January 3, 2023",
+    title: "Top 20 simple and quick desserts for kids",
+  },
+];
+
 export default function Blog() {
+  const navigate = useNavigate();
+
+  const handleArticle = (post) => {
+    navigate("/blogs/article", { state: { post } });
+  };
+
   return (
-    <div className={styles.Blog}>
-      <div>
+    <div className={styles.blogPage}>
+      <header>
         <ContactNav />
         <MenuBar title="FSD Fooder" />
-      </div>
-      <div className={styles.page}>
-        <div className={styles.h2}>
-          <h2>
-            The secret tips & tricks to prepare a<br />
-            perfect burger & pizza for our customers
-          </h2>
-        </div>
-        <div className={styles.BlogPhoto1}>
-          <img src={photo1} alt="Blog food preparation" />
-        </div>
-        <div className={styles.content1}>
-          <h5> What do you need to prepare a home-made burger?</h5>
-          <p>
-            Creating the perfect burger and pizza is an art, combining
-            ingredients, techniques, and passion to craft dishes that truly
-            delight the palate. Today, we'll unveil some closely guarded secrets
-            and insider tips for mastering these beloved staples of the culinary
-            world.
-          </p>
+      </header>
 
-          <p>
-            <span>Quality Beef:</span> The heart of a perfect burger is
-            top-notch beef. Opt for fresh, high-quality ground beef with a fat
-            content of about 20% for the juiciest, most flavorful results.
-          </p>
-          <p>
-            <span>Seasoning:</span> Simplicity is key here. A generous pinch of
-            salt and black pepper just before cooking will enhance the beef's
-            natural flavors without overshadowing them. Don’t Overwork the Meat:
-            When forming your patties, be gentle. Overworking the meat can lead
-            to dense, tough burgers. You want a patty that's firm enough to hold
-            together, but not compressed.
-          </p>
-          <p>
-            <span>Cooking:</span> High heat is crucial. Whether you're grilling
-            or pan-searing, make sure your cooking surface is hot enough to form
-            a nice crust on the patty, sealing in those delicious juices.
-          </p>
-          <p>
-            <span>Resting</span>: Allow your cooked burgers to rest for a few
-            minutes before serving. This lets the juices redistribute throughout
-            the patty, ensuring a moist and flavorful bite.
+      <section className={styles.h1}>
+        <div className={styles.h1Content}>
+          <h1 className={styles.title}>Our Blog & Articles</h1>
+          <p className={styles.para}>
+            We consider all the drivers of change gives you the components you
+            need <p>to change to create a truly happens.</p>
           </p>
         </div>
-        <div className={styles.content2}>
-          <h5>What are the right ingredients to make it delicious?</h5>
-          <p>
-            Creating the perfect burger and pizza is an art, combining
-            ingredients, techniques, and passion to craft dishes that truly
-            delight the palate. Today, we'll unveil some closely guarded secrets
-            and insider tips for mastering these beloved staples of the culinary
-            world.
-          </p>
+      </section>
 
-          <p>
-            <span>Quality Beef:</span> The heart of a perfect burger is
-            top-notch beef. Opt for fresh, high-quality ground beef with a fat
-            content of about 20% for the juiciest, most flavorful results.
-          </p>
-          <p>
-            <span>Seasoning:</span> Simplicity is key here. A generous pinch of
-            salt and black pepper just before cooking will enhance the beef's
-            natural flavors without overshadowing them. Don’t Overwork the Meat:
-            When forming your patties, be gentle. Overworking the meat can lead
-            to dense, tough burgers. You want a patty that's firm enough to hold
-            together, but not compressed.
-          </p>
-          <p>
-            <span>Cooking:</span> High heat is crucial. Whether you're grilling
-            or pan-searing, make sure your cooking surface is hot enough to form
-            a nice crust on the patty, sealing in those delicious juices.
-          </p>
-          <p>
-            <span>Resting</span>: Allow your cooked burgers to rest for a few
-            minutes before serving. This lets the juices redistribute throughout
-            the patty, ensuring a moist and flavorful bite.
-          </p>
-        </div>
-              <div className={styles.BlogPhoto2}>
-                  <img src={photo2} alt="Delicious homemade burger and pizza" />
-        </div>
-        <div className={styles.content3}></div>
-        <div className={styles.article}></div>
-        <div className={styles.footer}></div>
-      </div>
+          <section className={styles.cards}>      
+        {blogPosts.map((post) => (
+          <article
+            key={post.id}
+            className={styles.card}
+            onClick={() => handleArticle(post)}
+          >
+            <div className={styles.cardImage}>
+              <img src={post.image} alt={post.title} className={styles.Image} />
+            </div>
+            <div className={styles.Content}>
+              <time className={styles.Date}>{post.date}</time>
+              <h2 className={styles.Title}>{post.title}</h2>
+            </div>
+          </article>
+        ))}
+      </section>
     </div>
   );
 }

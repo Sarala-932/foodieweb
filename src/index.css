@@ -1,7 +1,13 @@
 :root {
-  --primary-color: #2c2f24;
-  --primary-backgroundcolor: #474747;
+  --primary-color: #2C3E2C;
+  --primary-backgroundcolor: #2C3E2C;
+  --cream: #F9F8F5;
+  --gold: #C9A227;
+  --gold-dark: #AD8B19;
+  --text-dark: #182226;
+  --white: #FFFFFF;
 }
+
 * {
   margin: 0;
   padding: 0;

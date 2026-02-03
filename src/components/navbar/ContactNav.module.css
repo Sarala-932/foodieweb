@@ -1,28 +1,25 @@
 .nav {
-    background-color: var(--primary-backgroundcolor);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    color: #F9F9F7;
-    text-align: center;
+  background-color: var(--primary-backgroundcolor);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: #f9f9f7;
+  text-align: center;
 }
-
 .contact {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
-
 .social {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
-
 .item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }

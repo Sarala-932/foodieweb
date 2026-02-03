@@ -1,103 +1,86 @@
-.Blog {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #fff;
+.blogPage {
+  min-height: 100vh;
+  
 }
 
-.page {
-    max-width: 1087px;
-    margin: 0 auto;
-    padding: 40px 24px 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.h1 {
+  padding: 48px 24px 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.h2 {
-    text-align: center;
-    max-width: 1030px;
-    margin: 0 auto 20px;
-
+.h1Content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.h2 h2 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.3;
-    color: #2c2c2c;
-    margin: 0;
-    letter-spacing: -0.02em;
-    align-items: center;
-
+.title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 16px;
+  
 }
 
-
-.BlogPhoto1 {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+.para {
+  font-size: 1rem;
+  color: #2C3E2C;
+  font-weight: 400;
 }
 
-.BlogPhoto1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 12px;
+.cards {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
 }
 
-.content1,
-.content2,
-.content3 {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    max-width: 1086px;
-}
-
-.content1 h5,
-.content2 h5 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2c2c2c;
-    margin: 0 0 8px;
-    line-height: 1.4;
-}
-
-.content1 p,
-.content2 p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #4a4a4a;
-    margin: 0;
-}
-
-.content1 p span,
-.content2 p span {
-    font-weight: 600;
-    color: #2c2c2c;
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 
 
-.BlogPhoto2 {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  
 }
 
-.BlogPhoto2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 12px;
+.Image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-
-.article,
-.footer {
-    min-height: 1px;
+.Content {
+  padding: 20px;
 }
+
+.Date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text-muted-light);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.Title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+}
+

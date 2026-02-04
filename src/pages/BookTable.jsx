@@ -4,6 +4,7 @@ import CustomButton from "../components/button/CustomButton";
 import map from "../assets/map.png";
 import ContactNav from "../components/navbar/ContactNav";
 import MenuBar from "../components/navbar/MenuBar";
+import Footer from "../components/footer/Footer";
 
 export default function BookTable() {
   const [formData, setFormData] = useState({
@@ -121,6 +122,7 @@ export default function BookTable() {
           <img src={map} alt="Location Map" className={styles.mapImg} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

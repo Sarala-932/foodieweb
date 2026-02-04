@@ -25,7 +25,7 @@
 
 .heroTitle {
   margin: 0;
-  color: #2C2F24;
+  color: #2c2f24;
   font-family: playfair display;
   font-weight: 400;
   letter-spacing: 0px;
@@ -35,7 +35,7 @@
 
 .heroSubtitle {
   margin: 18px auto 0;
-  color: #2C2F24;
+  color: #2c2f24;
   font-family: DM Sans;
   font-weight: 400;
   font-size: 20px;
@@ -57,13 +57,23 @@
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 11px 20px;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
   cursor: pointer;
-  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease,
-    border-color 120ms ease, color 120ms ease;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background-color 120ms ease,
+    border-color 120ms ease,
+    color 120ms ease;
 }
 
 .heroBtn:active {
@@ -71,7 +81,7 @@
 }
 
 .primary {
-  background: #AD343E;
+  background: #ad343e;
   color: #ffffff;
   box-shadow: 0 10px 24px rgba(139, 58, 54, 0.22);
 }
@@ -119,7 +129,7 @@
   margin: 0 0 60px;
   text-align: center;
   color: #2c2f24;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: clamp(32px, 4vw, 48px);
   letter-spacing: -0.01em;
@@ -142,7 +152,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
@@ -171,7 +183,14 @@
 .menuCardTitle {
   margin: 0 0 16px;
   color: #2c2f24;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
@@ -180,7 +199,14 @@
 .menuCardDescription {
   margin: 0 0 24px;
   color: #666666;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -189,7 +215,14 @@
 
 .menuCardLink {
   color: #ad343e;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
@@ -261,7 +294,7 @@
 
 .contactCardTitle {
   margin: 0 0 20px;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.2;
@@ -272,7 +305,14 @@
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 12px;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -298,7 +338,7 @@
 .aboutTitle {
   margin: 0 0 24px;
   color: #2c2f24;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: clamp(32px, 4vw, 48px);
   line-height: 1.2;
@@ -333,11 +373,20 @@
   color: #2c2f24;
   border: 2px solid #2c2f24;
   border-radius: 999px;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .aboutBtn:hover {
@@ -398,7 +447,7 @@
 .eventsSectionTitle {
   margin: 0 auto 56px;
   color: #2c2f24;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: clamp(28px, 3.5vw, 44px);
   line-height: 1.25;
@@ -446,7 +495,14 @@
   margin: 0;
   padding: 20px 20px 8px;
   color: #2c2f24;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
@@ -456,7 +512,14 @@
   margin: 0;
   padding: 0 20px 24px;
   color: #666666;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.55;
@@ -555,7 +618,7 @@
 .deliveryTitle {
   margin: 0 0 20px;
   color: #2c2f24;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: clamp(28px, 3vw, 40px);
   line-height: 1.25;
@@ -565,7 +628,14 @@
 .deliveryDescription {
   margin: 0 0 28px;
   color: #414536;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -581,7 +651,14 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 16px;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #2c2f24;
@@ -694,7 +771,7 @@
   margin: 0 auto 56px;
   text-align: center;
   color: #2c2f24;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: clamp(28px, 3.5vw, 44px);
   line-height: 1.25;
@@ -737,7 +814,14 @@
 .testimonialBody {
   margin: 0 0 24px;
   color: #414536;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 15px;
   line-height: 1.6;
   flex-grow: 1;
@@ -777,7 +861,14 @@
 
 .testimonialName {
   color: #2c2f24;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
@@ -785,7 +876,14 @@
 
 .testimonialLocation {
   color: #888888;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 14px;
   line-height: 1.3;
 }
@@ -842,7 +940,7 @@
 .blogTitle {
   margin: 0;
   color: #2c2f24;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: clamp(28px, 3.5vw, 44px);
   line-height: 1.25;
@@ -856,12 +954,22 @@
   padding: 12px 24px;
   background-color: #ad343e;
   color: #ffffff;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 4px 14px rgba(173, 52, 62, 0.25);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .blogReadAllBtn:hover {
@@ -917,7 +1025,14 @@
 
 .blogDate {
   color: #888888;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 14px;
   line-height: 1.4;
   margin-bottom: 12px;
@@ -926,7 +1041,14 @@
 .blogCardTitle {
   margin: 0 0 12px;
   color: #2c2f24;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 700;
   font-size: clamp(18px, 2vw, 22px);
   line-height: 1.35;
@@ -935,7 +1057,14 @@
 .blogExcerpt {
   margin: 0;
   color: #666666;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -975,7 +1104,14 @@
 .blogSmallCardTitle {
   margin: 0;
   color: #2c2f24;
-  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family:
+    "DM Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-weight: 700;
   font-size: clamp(15px, 1.5vw, 18px);
   line-height: 1.35;

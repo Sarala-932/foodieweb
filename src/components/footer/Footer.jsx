@@ -51,7 +51,7 @@ export default function Footer() {
             <li><Link className={styles.footerLink} to="/about">About</Link></li>
             <li><Link className={styles.footerLink} to="/menu">Menu</Link></li>
             <li><Link className={styles.footerLink} to="/pricing">Pricing</Link></li>
-            <li><Link className={styles.footerLink} to="/blog">Blog</Link></li>
+            <li><Link className={styles.footerLink} to="/blogs">Blog</Link></li>
             <li><Link className={styles.footerLink} to="/contact">Contact</Link></li>
             <li><Link className={styles.footerLink} to="/delivery">Delivery</Link></li>
           </ul>

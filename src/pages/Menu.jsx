@@ -5,6 +5,7 @@ import ContactNav from "../components/navbar/ContactNav";
 import MenuBar from "../components/navbar/MenuBar";
 import OrderApps from "../components/orderApps/OrderApps";
 import {menuData, categories} from "../data/menuData";
+import Footer from "../components/footer/Footer";
 
 export default function Menu() {
   const [active, setActive] = useState("All");
@@ -26,10 +27,7 @@ export default function Menu() {
 
         <div className={styles.categories}>
           {categories.map((item) => (
-            <button 
-            key={item} 
-            className={active === item ? styles.active : ""} 
-            onClick={() => setActive(item)}>
+            <button key={item} className={active === item ? styles.active : ""} onClick={() => setActive(item)}>
               {item}
             </button>
           ))}
@@ -43,6 +41,7 @@ export default function Menu() {
         </div>
       </div>
       <OrderApps />
+      <Footer />
     </div>
   );
 }

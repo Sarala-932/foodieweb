@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import ContactNav from "../components/navbar/ContactNav";
 import MenuBar from "../components/navbar/MenuBar";
+import Footer from "../components/footer/Footer";
 import styles from "./Blog.module.css";
 import blogm1 from "../assets/blogm1.jpg";
 import blogm2 from "../assets/blogm2.jpg";
@@ -132,6 +133,9 @@ export default function Blog() {
           </article>
         ))}
       </section>
+       <footer className={styles.footer}>
+              <Footer />
+            </footer>
     </div>
   );
 }

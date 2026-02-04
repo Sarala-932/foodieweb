@@ -140,10 +140,11 @@ export default function Blog2() {
           </p>
         </section>
 
-        <footer className={styles.footer}>
-          <Footer />
-        </footer>
+        
       </main>
+      <footer className={styles.footer}>
+        <Footer />
+      </footer>
     </div>
   );
 }

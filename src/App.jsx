@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import BookTable from "./pages/BookTable";
 import Blog2 from "./pages/Blog2";
 import About from './pages/About';
+import Contact from "./pages/Contact";
 export default function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/menu' element={<Menu/>}/>
         <Route path="/book-table" element={<BookTable />} />
+        <Route path="/contact" element={<Contact />} />
         
       </Routes>
     </div>

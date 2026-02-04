@@ -11,7 +11,7 @@ export default function ContactNav() {
     <div className={styles.nav}>
       <ul className={styles.contact}>
         <li className={styles.item}>
-          <LocalPhoneOutlinedIcon /> <span>(+91) 98989890090</span>
+          <LocalPhoneOutlinedIcon /> <span>(+91) 9898989090</span>
         </li>
         <li className={styles.item}>
           <EmailOutlinedIcon /> <span>abc@gmail.com</span>

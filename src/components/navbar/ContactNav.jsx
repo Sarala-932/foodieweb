@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import styles from "./ContactNav.module.css";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";

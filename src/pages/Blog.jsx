@@ -111,7 +111,7 @@ export default function Blog() {
           <h1 className={styles.title}>Our Blog & Articles</h1>
           <p className={styles.para}>
             We consider all the drivers of change gives you the components you
-            need <p>to change to create a truly happens.</p>
+            need to change to create a truly happens.
           </p>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For now just simulate submit and clear the form
+    
     alert("Thank you for reaching out. We will get back to you soon.");
     setFormData({
       name: "",

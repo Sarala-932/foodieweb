@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Footer from '../components/footer/Footer'
 
 import ContactNav from '../components/navbar/ContactNav'
@@ -60,10 +60,10 @@ export default function Home() {
               in our welcoming, culinary haven.
             </p>
             <div className={styles.heroActions}>
-              <button type="button" className={`${styles.heroBtn} ${styles.primary}`} onClick={() => window.location.href = '/book-table'}>
+              <button type="button" className={`${styles.heroBtn} ${styles.primary}`} onClick={() => navigate('/book-table')}>
                 Book A Table
               </button>
-              <button type="button" className={`${styles.heroBtn} ${styles.secondary}`} onClick={() => window.location.href = '/menu'}>
+              <button type="button" className={`${styles.heroBtn} ${styles.secondary}`} onClick={() => navigate('/menu')}>
                 Explore Menu
               </button>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() =>navigate('/menu')}>
                 Explore Menu
               </a>
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => navigate('/menu')}>
                 Explore Menu
               </a>
             </div>
@@ -107,7 +107,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => navigate('/menu')}>
                 Explore Menu
               </a>
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => navigate('/menu')}>
                 Explore Menu
               </a>
             </div>

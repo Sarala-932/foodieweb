@@ -7,6 +7,12 @@
   gap: 24px;
 }
 
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .items {
   display: flex;
   list-style: none;
@@ -57,6 +63,31 @@
   text-decoration: none;
 }
 
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #dbdfd0;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.menuToggle span {
+  width: 18px;
+  height: 2px;
+  background-color: #2c2f24;
+  border-radius: 999px;
+}
+
+.itemsOpen {
+  /* helper class toggled from React */
+}
+
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
@@ -78,8 +109,12 @@
     align-items: center;
   }
 
-  .logo {
+  .logoRow {
     width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
     justify-content: center;
   }
 
@@ -89,14 +124,28 @@
   }
 
   .items {
-    justify-content: center;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .itemsOpen {
+    display: flex;
   }
 
   .item {
+    width: 100%;
     padding: 0.4rem 0.75rem;
   }
 
   .logoimg {
     width: 80px;
+  }
+
+  .menuToggle {
+    display: flex;
   }
 }

@@ -13,6 +13,12 @@
   gap: 12px;
 }
 
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .items {
   display: flex;
   list-style: none;
@@ -29,6 +35,9 @@
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 34px;
 }
 
 .logoimg {
@@ -42,12 +51,7 @@
   gap: 12px;
 }
 
-.item {
-  padding: 0.5rem 1rem;
-  border-radius: 34px;
-}
-
-.item:hover {
+.item:hover > a {
   background-color: #dbdfd0;
 }
 
@@ -84,9 +88,7 @@
   border-radius: 999px;
 }
 
-.itemsOpen {
-  /* helper class toggled from React */
-}
+/* Mobile styles */
 
 @media (max-width: 900px) {
   .navbar {
@@ -97,10 +99,29 @@
     gap: 12px;
   }
 
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  .navMenuOpen {
+    display: flex;
+  }
+
   .items {
     width: 100%;
+    flex-direction: column;
     justify-content: flex-start;
-    row-gap: 4px;
+    align-items: flex-start;
+    row-gap: 8px;
+  }
+
+  .menuToggle {
+    display: flex; /* Show toggle starting at 900px */
   }
 }
 
@@ -123,29 +144,11 @@
     text-align: center;
   }
 
-  .items {
-    display: none;
-    flex-direction: column;
+  .item > a {
     width: 100%;
-    margin-top: 8px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .itemsOpen {
-    display: flex;
-  }
-
-  .item {
-    width: 100%;
-    padding: 0.4rem 0.75rem;
   }
 
   .logoimg {
     width: 80px;
-  }
-
-  .menuToggle {
-    display: flex;
   }
 }

@@ -45,7 +45,7 @@ export default function BookTable() {
 
       {/* Main Container */}
 
-      <div className={styles.container}>
+      <div className={`${styles.container} page-transition`}>
         {/* Header Section */}
         <div className={styles.header}>
           <h1 className={styles.title}>Book A Table</h1>

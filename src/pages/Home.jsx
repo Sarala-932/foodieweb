@@ -1,37 +1,37 @@
 import React from "react";
-import { Link, Navigate, useNavigate } from 'react-router-dom';
-import Footer from '../components/footer/Footer'
+import {Link, Navigate, useNavigate} from "react-router-dom";
+import Footer from "../components/footer/Footer";
 
-import ContactNav from '../components/navbar/ContactNav'
-import MenuBar from '../components/navbar/MenuBar'
-import styles from './Home.module.css'
-import heroBg from '../assets/HomeImage1.png'
-import aboutSectionImage from '../assets/HomeImage2.png'
-import eventCatering from '../assets/HomeImage3.png'
-import eventBirthday from '../assets/HomeImage4.png'
-import eventWedding from '../assets/HomeImage5.png'
-import eventEvents from '../assets/HomeImage6.png'
-import deliveryChef from '../assets/HomeImage7.png'
-import deliveryFood1 from '../assets/HomeImage8.png'
-import deliveryFood2 from '../assets/HomeImage9.png'
-import person1 from '../assets/HomeImage10.png'
-import person2 from '../assets/HomeImage11.png'
-import person3 from '../assets/HomeImage12.png'
-import HomeImage13 from '../assets/HomeImage13.png'
-import HomeImage14 from '../assets/HomeImage14.png'
-import HomeImage15 from '../assets/HomeImage15.png'
-import HomeImage16 from '../assets/HomeImage16.png'
-import HomeImage17 from '../assets/HomeImage17.png'
-import LocalDrinkIcon from '@mui/icons-material/LocalDrink';
-import CakeIcon from '@mui/icons-material/Cake';
-import LocalDiningIcon from '@mui/icons-material/LocalDining';
-import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ContactNav from "../components/navbar/ContactNav";
+import MenuBar from "../components/navbar/MenuBar";
+import styles from "./Home.module.css";
+import heroBg from "../assets/HomeImage1.png";
+import aboutSectionImage from "../assets/HomeImage2.png";
+import eventCatering from "../assets/HomeImage3.png";
+import eventBirthday from "../assets/HomeImage4.png";
+import eventWedding from "../assets/HomeImage5.png";
+import eventEvents from "../assets/HomeImage6.png";
+import deliveryChef from "../assets/HomeImage7.png";
+import deliveryFood1 from "../assets/HomeImage8.png";
+import deliveryFood2 from "../assets/HomeImage9.png";
+import person1 from "../assets/HomeImage10.png";
+import person2 from "../assets/HomeImage11.png";
+import person3 from "../assets/HomeImage12.png";
+import HomeImage13 from "../assets/HomeImage13.png";
+import HomeImage14 from "../assets/HomeImage14.png";
+import HomeImage15 from "../assets/HomeImage15.png";
+import HomeImage16 from "../assets/HomeImage16.png";
+import HomeImage17 from "../assets/HomeImage17.png";
+import LocalDrinkIcon from "@mui/icons-material/LocalDrink";
+import CakeIcon from "@mui/icons-material/Cake";
+import LocalDiningIcon from "@mui/icons-material/LocalDining";
+import FreeBreakfastIcon from "@mui/icons-material/FreeBreakfast";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -42,12 +42,8 @@ export default function Home() {
         <MenuBar title="Modern DABA" />
       </header>
 
-      <main>
-        <section
-          className={styles.hero}
-          style={{ backgroundImage: `url(${heroBg})` }}
-          aria-label="Hero"
-        >
+      <main className="page-transition">
+        <section className={styles.hero} style={{backgroundImage: `url(${heroBg})`}} aria-label="Hero">
           <div className={styles.heroInner}>
             <h1 className={styles.heroTitle}>
               Best food for
@@ -60,10 +56,10 @@ export default function Home() {
               in our welcoming, culinary haven.
             </p>
             <div className={styles.heroActions}>
-              <button type="button" className={`${styles.heroBtn} ${styles.primary}`} onClick={() => navigate('/book-table')}>
+              <button type="button" className={`${styles.heroBtn} ${styles.primary}`} onClick={() => navigate("/book-table")}>
                 Book A Table
               </button>
-              <button type="button" className={`${styles.heroBtn} ${styles.secondary}`} onClick={() => navigate('/menu')}>
+              <button type="button" className={`${styles.heroBtn} ${styles.secondary}`} onClick={() => navigate("/menu")}>
                 Explore Menu
               </button>
             </div>
@@ -78,10 +74,10 @@ export default function Home() {
                 <FreeBreakfastIcon />
               </div>
               <h3 className={styles.menuCardTitle}>Breakfast</h3>
-              <p className={styles.menuCardDescription}>
-                In the new era of technology we look in the future with certainty and pride for our life.
-              </p>
-              <Link to='/menu' className={styles.menuCardLink}>Explore Menu</Link>
+              <p className={styles.menuCardDescription}>In the new era of technology we look in the future with certainty and pride for our life.</p>
+              <Link to="/menu?category=Breakfast" className={styles.menuCardLink}>
+                Explore Menu
+              </Link>
             </div>
 
             <div className={styles.menuCard}>
@@ -89,10 +85,10 @@ export default function Home() {
                 <LocalDiningIcon />
               </div>
               <h3 className={styles.menuCardTitle}>Main Dishes</h3>
-              <p className={styles.menuCardDescription}>
-                In the new era of technology we look in the future with certainty and pride for our life.
-              </p>
-              <Link to='/menu' className={styles.menuCardLink}>Explore Menu</Link>
+              <p className={styles.menuCardDescription}>In the new era of technology we look in the future with certainty and pride for our life.</p>
+              <Link to="/menu?category=Main Dishes" className={styles.menuCardLink}>
+                Explore Menu
+              </Link>
             </div>
 
             <div className={styles.menuCard}>
@@ -100,10 +96,10 @@ export default function Home() {
                 <LocalDrinkIcon />
               </div>
               <h3 className={styles.menuCardTitle}>Drinks</h3>
-              <p className={styles.menuCardDescription}>
-                In the new era of technology we look in the future with certainty and pride for our life.
-              </p>
-              <Link to='/menu' className={styles.menuCardLink}>Explore Menu</Link>
+              <p className={styles.menuCardDescription}>In the new era of technology we look in the future with certainty and pride for our life.</p>
+              <Link to="/menu?category=Drinks" className={styles.menuCardLink}>
+                Explore Menu
+              </Link>
             </div>
 
             <div className={styles.menuCard}>
@@ -111,10 +107,10 @@ export default function Home() {
                 <CakeIcon />
               </div>
               <h3 className={styles.menuCardTitle}>Desserts</h3>
-              <p className={styles.menuCardDescription}>
-                In the new era of technology we look in the future with certainty and pride for our life.
-              </p>
-              <Link to='/menu' className={styles.menuCardLink}>Explore Menu</Link>
+              <p className={styles.menuCardDescription}>In the new era of technology we look in the future with certainty and pride for our life.</p>
+              <Link to="/menu?category=Desserts" className={styles.menuCardLink}>
+                Explore Menu
+              </Link>
             </div>
           </div>
         </section>
@@ -122,11 +118,7 @@ export default function Home() {
         <section className={styles.aboutSection} aria-label="About us">
           <div className={styles.aboutInner}>
             <div className={styles.aboutImageWrap}>
-              <img
-                src={aboutSectionImage}
-                alt="Fresh food at our restaurant"
-                className={styles.aboutImage}
-              />
+              <img src={aboutSectionImage} alt="Fresh food at our restaurant" className={styles.aboutImage} />
               <div className={styles.contactCard}>
                 <h3 className={styles.contactCardTitle}>Come and visit us</h3>
                 <div className={styles.contactCardItem}>
@@ -144,14 +136,14 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.aboutContent}>
-              <h2 className={styles.aboutTitle}>
-                We provide healthy food for your family.
-              </h2>
+              <h2 className={styles.aboutTitle}>We provide healthy food for your family.</h2>
               <p className={styles.aboutParagraph}>
-                Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.
+                Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim
+                to honor our local roots while infusing a global palate.
               </p>
               <p className={styles.aboutParagraph2}>
-                At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.
+                At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an
+                unforgettable event.
               </p>
               <Link to="/about" className={styles.aboutBtn}>
                 More About Us
@@ -169,55 +161,31 @@ export default function Home() {
           <div className={styles.eventsCards}>
             <article className={styles.eventsCard}>
               <div className={styles.eventsCardImageWrap}>
-                <img
-                  src={eventCatering}
-                  alt="Catering service - appetizers and small plates"
-                  className={styles.eventsCardImage}
-                />
+                <img src={eventCatering} alt="Catering service - appetizers and small plates" className={styles.eventsCardImage} />
               </div>
               <h3 className={styles.eventsCardTitle}>Caterings</h3>
-              <p className={styles.eventsCardDescription}>
-                In the new era of technology we look in the future with certainty for life.
-              </p>
+              <p className={styles.eventsCardDescription}>In the new era of technology we look in the future with certainty for life.</p>
             </article>
             <article className={styles.eventsCard}>
               <div className={styles.eventsCardImageWrap}>
-                <img
-                  src={eventBirthday}
-                  alt="Birthday celebrations"
-                  className={styles.eventsCardImage}
-                />
+                <img src={eventBirthday} alt="Birthday celebrations" className={styles.eventsCardImage} />
               </div>
               <h3 className={styles.eventsCardTitle}>Birthdays</h3>
-              <p className={styles.eventsCardDescription}>
-                In the new era of technology we look in the future with certainty for life.
-              </p>
+              <p className={styles.eventsCardDescription}>In the new era of technology we look in the future with certainty for life.</p>
             </article>
             <article className={styles.eventsCard}>
               <div className={styles.eventsCardImageWrap}>
-                <img
-                  src={eventWedding}
-                  alt="Wedding celebrations"
-                  className={styles.eventsCardImage}
-                />
+                <img src={eventWedding} alt="Wedding celebrations" className={styles.eventsCardImage} />
               </div>
               <h3 className={styles.eventsCardTitle}>Weddings</h3>
-              <p className={styles.eventsCardDescription}>
-                In the new era of technology we look in the future with certainty for life.
-              </p>
+              <p className={styles.eventsCardDescription}>In the new era of technology we look in the future with certainty for life.</p>
             </article>
             <article className={styles.eventsCard}>
               <div className={styles.eventsCardImageWrap}>
-                <img
-                  src={eventEvents}
-                  alt="Private and corporate events"
-                  className={styles.eventsCardImage}
-                />
+                <img src={eventEvents} alt="Private and corporate events" className={styles.eventsCardImage} />
               </div>
               <h3 className={styles.eventsCardTitle}>Events</h3>
-              <p className={styles.eventsCardDescription}>
-                In the new era of technology we look in the future with certainty for life.
-              </p>
+              <p className={styles.eventsCardDescription}>In the new era of technology we look in the future with certainty for life.</p>
             </article>
           </div>
         </section>
@@ -225,35 +193,19 @@ export default function Home() {
         <section className={styles.deliverySection} aria-label="Food delivery">
           <div className={styles.deliveryInner}>
             <div className={styles.deliveryChefWrap}>
-              <img
-                src={deliveryChef}
-                alt="Chef preparing your order"
-                className={styles.deliveryChefImage}
-              />
+              <img src={deliveryChef} alt="Chef preparing your order" className={styles.deliveryChefImage} />
             </div>
             <div className={styles.deliveryImagesWrap}>
               <div className={styles.deliveryFoodImageWrap}>
-                <img
-                  src={deliveryFood1}
-                  alt="Fresh dishes from our kitchen"
-                  className={styles.deliveryFoodImage}
-                />
+                <img src={deliveryFood1} alt="Fresh dishes from our kitchen" className={styles.deliveryFoodImage} />
               </div>
               <div className={styles.deliveryFoodImageWrap}>
-                <img
-                  src={deliveryFood2}
-                  alt="Grilled specialties"
-                  className={styles.deliveryFoodImage}
-                />
+                <img src={deliveryFood2} alt="Grilled specialties" className={styles.deliveryFoodImage} />
               </div>
             </div>
             <div className={styles.deliveryContent}>
-              <h2 className={styles.deliveryTitle}>
-                Fastest Food Delivery in City
-              </h2>
-              <p className={styles.deliveryDescription}>
-                Our visual designer lets you quickly and of drag a down your way to customapps for both keep desktop.
-              </p>
+              <h2 className={styles.deliveryTitle}>Fastest Food Delivery in City</h2>
+              <p className={styles.deliveryDescription}>Our visual designer lets you quickly and of drag a down your way to customapps for both keep desktop.</p>
               <ul className={styles.deliveryFeatures}>
                 <li className={styles.deliveryFeature}>
                   <span className={styles.deliveryFeatureIcon} aria-hidden>
@@ -332,26 +284,20 @@ export default function Home() {
         <section className={styles.blogSection} aria-label="Our Blog & Articles">
           <div className={styles.blogHeader}>
             <h2 className={styles.blogTitle}>Our Blog & Articles</h2>
-            <button type="button" className={styles.blogReadAllBtn} onClick={() => navigate('/blogs')}>
+            <button type="button" className={styles.blogReadAllBtn} onClick={() => navigate("/blogs")}>
               Read All Articles
             </button>
           </div>
           <div className={styles.blogGrid}>
             <article className={styles.blogFeaturedCard}>
               <div className={styles.blogCardImageWrap}>
-                <img
-                  src={HomeImage13}
-                  alt="Double cheeseburger on wooden surface"
-                  className={styles.blogCardImage}
-                />
+                <img src={HomeImage13} alt="Double cheeseburger on wooden surface" className={styles.blogCardImage} />
               </div>
               <div className={styles.blogCardContent}>
                 <time className={styles.blogDate} dateTime="2023-01-03">
                   January 3, 2023
                 </time>
-                <h3 className={styles.blogCardTitle}>
-                  The secret tips & tricks to prepare a perfect burger & pizza for our customers
-                </h3>
+                <h3 className={styles.blogCardTitle}>The secret tips & tricks to prepare a perfect burger & pizza for our customers</h3>
                 <p className={styles.blogExcerpt}>
                   Lorem ipsum dolor sit amet consectetur of a adipiscing elitilmim semper adipiscing massa gravida nisi cras enim quis nibholm varius amet gravida ut facilisis neque egestas.
                 </p>
@@ -360,70 +306,46 @@ export default function Home() {
             <div className={styles.blogSmallCards}>
               <article className={styles.blogSmallCard}>
                 <div className={styles.blogSmallCardImageWrap}>
-                  <img
-                    src={HomeImage14}
-                    alt="French fries in an air fryer"
-                    className={styles.blogCardImage}
-                  />
+                  <img src={HomeImage14} alt="French fries in an air fryer" className={styles.blogCardImage} />
                 </div>
                 <div className={styles.blogCardContent}>
                   <time className={styles.blogDate} dateTime="2023-01-03">
                     January 3, 2023
                   </time>
-                  <h3 className={styles.blogSmallCardTitle}>
-                    How to prepare the perfect french fries in an air fryer
-                  </h3>
+                  <h3 className={styles.blogSmallCardTitle}>How to prepare the perfect french fries in an air fryer</h3>
                 </div>
               </article>
               <article className={styles.blogSmallCard}>
                 <div className={styles.blogSmallCardImageWrap}>
-                  <img
-                    src={HomeImage15}
-                    alt="Chicken tenders with soda"
-                    className={styles.blogCardImage}
-                  />
+                  <img src={HomeImage15} alt="Chicken tenders with soda" className={styles.blogCardImage} />
                 </div>
                 <div className={styles.blogCardContent}>
                   <time className={styles.blogDate} dateTime="2023-01-03">
                     January 3, 2023
                   </time>
-                  <h3 className={styles.blogSmallCardTitle}>
-                    How to prepare delicious chicken tenders
-                  </h3>
+                  <h3 className={styles.blogSmallCardTitle}>How to prepare delicious chicken tenders</h3>
                 </div>
               </article>
               <article className={styles.blogSmallCard}>
                 <div className={styles.blogSmallCardImageWrap}>
-                  <img
-                    src={HomeImage16}
-                    alt="Cheesecake recipes"
-                    className={styles.blogCardImage}
-                  />
+                  <img src={HomeImage16} alt="Cheesecake recipes" className={styles.blogCardImage} />
                 </div>
                 <div className={styles.blogCardContent}>
                   <time className={styles.blogDate} dateTime="2023-01-03">
                     January 3, 2023
                   </time>
-                  <h3 className={styles.blogSmallCardTitle}>
-                    7 delicious cheesecake recipes you can prepare
-                  </h3>
+                  <h3 className={styles.blogSmallCardTitle}>7 delicious cheesecake recipes you can prepare</h3>
                 </div>
               </article>
               <article className={styles.blogSmallCard}>
                 <div className={styles.blogSmallCardImageWrap}>
-                  <img
-                    src={HomeImage17}
-                    alt="Pizza at a restaurant"
-                    className={styles.blogCardImage}
-                  />
+                  <img src={HomeImage17} alt="Pizza at a restaurant" className={styles.blogCardImage} />
                 </div>
                 <div className={styles.blogCardContent}>
                   <time className={styles.blogDate} dateTime="2023-01-03">
                     January 3, 2023
                   </time>
-                  <h3 className={styles.blogSmallCardTitle}>
-                    5 great pizza restaurants you should visit this city
-                  </h3>
+                  <h3 className={styles.blogSmallCardTitle}>5 great pizza restaurants you should visit this city</h3>
                 </div>
               </article>
             </div>
@@ -432,5 +354,5 @@ export default function Home() {
         <Footer />
       </main>
     </div>
-  )
+  );
 }

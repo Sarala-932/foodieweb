@@ -106,6 +106,7 @@ export default function Blog() {
         <MenuBar title="Modern DABA" />
       </header>
 
+      <main className="page-transition">
       <section className={styles.h1}>
         <div className={styles.h1Content}>
           <h1 className={styles.title}>Our Blog & Articles</h1>
@@ -133,6 +134,7 @@ export default function Blog() {
           </article>
         ))}
       </section>
+      </main>
        <footer className={styles.footer}>
               <Footer />
             </footer>

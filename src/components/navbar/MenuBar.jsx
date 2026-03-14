@@ -18,41 +18,34 @@ export default function MenuBar({title, userlogo, style}) {
           <img src={userlogo || logo} alt="logo" className={styles.logoimg} />
           <h1 className={styles.title}>{title || "Your Company Name"}</h1>
         </div>
-        <button
-          type="button"
-          className={styles.menuToggle}
-          onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
-          aria-expanded={isOpen}
-        >
+        <button type="button" className={styles.menuToggle} onClick={toggleMenu} aria-label="Toggle navigation menu" aria-expanded={isOpen}>
           <span />
           <span />
           <span />
         </button>
       </div>
-      <ul
-        className={`${styles.items} ${isOpen ? styles.itemsOpen : ""}`}
-        onClick={() => setIsOpen(false)}
-      >
-        <li className={styles.item}>
-          <Link to={"/"}>Home</Link>
-        </li>
-        <li className={styles.item}>
-          <Link to={"/about"}>About</Link>
-        </li>
-        <li className={styles.item}>
-          <Link to={"/menu"}>Menu</Link>
-        </li>
-        <li className={styles.item}>
-          <Link to={"/blogs"}>Blogs</Link>
-        </li>
-        <li className={styles.item}>
-          <Link to={"/contact"}>Contact</Link>
-        </li>
-      </ul>
-      <Link to={"/book-table"} className={styles.link}>
-        <CustomButton btnTxt="Book A Table" />
-      </Link>
+      <div className={`${styles.navMenu} ${isOpen ? styles.navMenuOpen : ""}`}>
+        <ul className={styles.items}>
+          <li className={styles.item} onClick={() => setIsOpen(false)}>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li className={styles.item} onClick={() => setIsOpen(false)}>
+            <Link to={"/about"}>About</Link>
+          </li>
+          <li className={styles.item} onClick={() => setIsOpen(false)}>
+            <Link to={"/menu"}>Menu</Link>
+          </li>
+          <li className={styles.item} onClick={() => setIsOpen(false)}>
+            <Link to={"/blogs"}>Blogs</Link>
+          </li>
+          <li className={styles.item} onClick={() => setIsOpen(false)}>
+            <Link to={"/contact"}>Contact</Link>
+          </li>
+        </ul>
+        <Link to={"/book-table"} className={styles.link} onClick={() => setIsOpen(false)}>
+          <CustomButton btnTxt="Book A Table" />
+        </Link>
+      </div>
     </div>
   );
 }

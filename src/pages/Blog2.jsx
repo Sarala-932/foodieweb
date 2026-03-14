@@ -18,7 +18,7 @@ export default function Blog2() {
         <MenuBar title="Modern DABA" />
       </header>
 
-      <main className={styles.page}>
+      <main className={`${styles.page} page-transition`}>
         <h2 className={styles.title}>
           {post?.title || (
             <>

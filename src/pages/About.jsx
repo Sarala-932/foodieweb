@@ -19,7 +19,7 @@ export default function About() {
         <MenuBar title="Modern DABA" />
       </header>
 
-      <main>
+      <main className="page-transition">
         {/* Section 1: big plate and  card and text */}
         <section className={styles.topSection}>
           <div className={styles.container}>

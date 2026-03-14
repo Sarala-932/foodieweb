@@ -38,7 +38,7 @@ export default function Contact() {
         <MenuBar title="Modern DABA" />
       </header>
 
-      <main>
+      <main className="page-transition">
         <section className={styles.heroSection} aria-label="Contact header">
           <div className={styles.heroContent}>
             <h1 className={styles.title}>Contact Us</h1>

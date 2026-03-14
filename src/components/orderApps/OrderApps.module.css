@@ -80,7 +80,9 @@
 .logo {
   height: 22px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
+  overflow: hidden;
 }
 /* Response for smaller screens */
 @media (max-width: 900px) {

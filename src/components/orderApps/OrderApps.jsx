@@ -34,8 +34,7 @@ export default function OrderApps() {
           {apps.map(({name, logo, color, showName}) => (
             <div key={name} className={styles.card}>
               <div className={styles.appContent}>
-                {logo && <img src={logo} alt={`${name} Logo`} className={styles.logo} />}
-
+                {logo && <img src={logo} alt={`${name} Logo`} className={styles.logo} loading="lazy" />}
                 {(!logo || showName) && (
                   <span className={styles.appName} style={color ? {color} : {}}>
                     {name}

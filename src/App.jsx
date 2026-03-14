@@ -10,16 +10,16 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blogs" element={<Blog />} />
-        <Route path="/blogs/article" element={<Blog2 />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/book-table" element={<BookTable />} />
-        <Route path="/contact" element={<Contact />} />
-        
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs/article" element={<Blog2 />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/book-table" element={<BookTable />} />
+          <Route path="/contact" element={<Contact />} />
+          
+        </Routes>
     </div>
   );
 }
